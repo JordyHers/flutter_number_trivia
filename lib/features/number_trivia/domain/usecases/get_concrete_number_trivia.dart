@@ -9,8 +9,8 @@ class GetConcreteNumberTrivia{
   final NumberTriviaRepository repository;
   GetConcreteNumberTrivia(this.repository);
 
-Future<Either<Failure, NumberTrivia>> execute ({@required int number}) async {
+  /// A call methods creates a callable Class
+Future<Either<Failure, NumberTrivia>> call({@required int number}) async {
   return await repository.getConcreteNumberTrivia(number);
-
 }
 }
